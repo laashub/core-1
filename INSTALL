@@ -35,6 +35,8 @@ following additional tools:
 
 Latest stable versions of the tools and libraries are generally advised.
 
+See INSTALL DEPENDENCIES below for example of deps for various systems.
+
 OPERATING SYSTEMS
 -----------------
 
@@ -102,3 +104,20 @@ RUNNING TESTSUITE
 -----------------
 
 Please refer to the instructions in tests/README file.
+
+INSTALL DEPENDENCIES
+--------------------
+
+Here we have examples of one-liners for various systems to install dependencies
+needed to build. The version and date checked are noted in parenthesis. Please
+submit PRs with updates to this information.
+
+* FreeBSD (12.1 2020-04-07)
+```
+# pkg install -y gdb gcc gmake lmdb autoconf automake libtool git python3
+```
+
+* SUSE (Tumbleweed 2020-02-02)
+```
+# zypper install gdb gcc make lmdb autoconf automake libtool git python3 pcre-devel libopenssl-devel pam-devel
+```
